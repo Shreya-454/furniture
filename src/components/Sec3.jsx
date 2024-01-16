@@ -188,7 +188,7 @@ const Sec3 = () => {
   };
   return (
     <div className="bg-[#2D39490A] md:pt-[70px] pt-5 lg:pb-[98px] pb-0 relative overflow-x-clip">
-      <div className="max-w-[741px] max-h-[417px] h-full bg-grey-gradient w-full absolute right-0 top-[51%] xl:top-[-30z%] "></div>
+      <div className="max-w-[741px] max-h-[417px] h-full bg-grey-gradient w-full absolute right-0 top-[51%] xl:top-[-30%] "></div>
       <div className="max-w-[1320px] mx-auto px-3">
         <div className="flex flex-wrap flex-row -mx-3">
           <div
