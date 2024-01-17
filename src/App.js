@@ -15,7 +15,7 @@ function App() {
     setdata(true);
     setTimeout(() => {
       setdata(false);
-    }, 4000);
+    }, 3000);
   }, []);
   useEffect(() => {
     AOS.init({
