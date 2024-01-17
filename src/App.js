@@ -29,7 +29,7 @@ function App() {
           <Preloader />
         </div>
       ) : (
-        <div>
+        <div className="overflow-hidden">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
