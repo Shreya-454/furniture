@@ -4,6 +4,7 @@ import Sec3 from "../components/Sec3";
 import Footer from "../components/Footer";
 import BackToTop from "../components/BackToTop";
 import Wooden from "../components/Wooden";
+import Nav from "../components/Nav";
 
 const About = () => {
   return (
