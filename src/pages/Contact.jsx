@@ -8,7 +8,10 @@ import BackToTop from "../components/BackToTop";
 const Contact = () => {
   return (
     <div>
-      <Header />
+       <div className="bg-[url(./assets/images/header-bg.webp)] bg-cover  bg-center bg-no-repeat min-h-screen">
+            <Nav />
+            <Header />
+          </div>
       <Latest />
       <Testimonial />
       <Footer />

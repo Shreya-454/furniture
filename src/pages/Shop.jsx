@@ -8,7 +8,10 @@ import Sec2 from "../components/Sec2";
 const Shop = () => {
   return (
     <div>
-          <Header />
+          <div className="bg-[url(./assets/images/header-bg.webp)] bg-cover  bg-center bg-no-repeat min-h-screen">
+            <Nav />
+            <Header />
+          </div>
           <Sec2/>
           <Product />
           <Footer />
