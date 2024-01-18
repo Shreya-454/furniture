@@ -23,7 +23,7 @@ const images = [
   },
 ];
 const Sec3 = () => {
-  const card = images.map((images,index) => (
+  const card = images.map((images, index) => (
     <div className="mx-3" key={index}>
       <div className="max-w-[295px] max-h-[338px] h-full pb-[27px]  bg-white pl-[17px] pt-[15px] pr-[12px] shadow-[2px_7px_28px_0px_#0000000D] mx-3">
         <img src={images.img} alt="img1" className="mb-[13px]" />
@@ -147,15 +147,15 @@ const Sec3 = () => {
         settings: {
           slidesToShow: 2.08,
           slidesToScroll: 1,
-          dots:true
-        }
+          dots: true,
+        },
       },
       {
         breakpoint: 950,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
-            dots:true
+          dots: true,
         },
       },
       {
@@ -163,7 +163,7 @@ const Sec3 = () => {
         settings: {
           slidesToShow: 3,
           slidesToScroll: 1,
-            dots:true
+          dots: true,
         },
       },
       {
@@ -171,7 +171,7 @@ const Sec3 = () => {
         settings: {
           slidesToShow: 2.3,
           slidesToScroll: 1,
-            dots:true
+          dots: true,
         },
       },
       {
@@ -179,7 +179,9 @@ const Sec3 = () => {
         settings: {
           slidesToShow: 1.7,
           slidesToScroll: 1,
-            dots:true
+          autoPlay: true,
+          autoPlaySpeed: 500,
+          dots: true,
         },
       },
       {
@@ -188,8 +190,8 @@ const Sec3 = () => {
           slidesToShow: 1,
           slidesToScroll: 1,
           autoPlay: true,
-          autoPlaySpeed: 1000,
-           dots:true,
+          autoPlaySpeed: 500,
+          dots: true,
         },
       },
     ],
@@ -265,7 +267,7 @@ const Sec3 = () => {
             data-aos-easing="linear"
             data-aos-duration="1500"
           >
-            <Slider ref={btn} {...settings} className="max-h-[400px] h-full s1" >
+            <Slider ref={btn} {...settings} className="max-h-[400px] h-full s1">
               {card}
             </Slider>
           </div>

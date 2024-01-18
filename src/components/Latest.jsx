@@ -135,7 +135,6 @@ const Latest = () => {
           infinite: true,
         },
       },
-
       {
         breakpoint: 800,
         settings: {
@@ -148,7 +147,7 @@ const Latest = () => {
   return (
     <div className="sm:pt-[110px] pt-16 relative pb-[69px]">
       <button
-        className="md:w-[99px] md:h-[99px] w-[50px] h-[50px] rounded-full bg-white hover:bg-black duration-300  absolute 2xl:bottom-[30%] bottom-0 group  2xl:left-[9%] left-[10%] flex justify-center items-center shadow-[2px_7px_16px_0px_#00000014]
+        className="md:w-[99px] md:h-[99px] w-[50px] h-[50px] rounded-full bg-white hover:bg-black duration-300 absolute 2xl:bottom-[30%] bottom-0 md:bottom-[-3.5%] group  2xl:left-[4%] left-[10%] flex justify-center items-center shadow-[2px_7px_16px_0px_#00000014]
 "
         onClick={() => btn?.current?.slickPrev()}
       >
@@ -171,7 +170,7 @@ const Latest = () => {
       </button>
       <button
         className="md:w-[99px] md:h-[99px] w-[50px] h-[50px] shadow-[2px_7px_16px_0px_#00000014]
- rounded-full bg-white absolute 2xl:bottom-[30%] hover:bg-black group 2xl:right-[9%] bottom-0 right-[10%] flex justify-center items-center duration-300"
+ rounded-full bg-white absolute 2xl:bottom-[30%] hover:bg-black group  2xl:right-[4%] md:bottom-[-3.5%] bottom-0 right-[10%] flex justify-center items-center duration-300"
         onClick={() => btn?.current?.slickNext()}
       >
         <span>
