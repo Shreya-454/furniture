@@ -54,7 +54,7 @@ const Nav = () => {
             <Link to={"/contact"}> CONTACT US </Link>
           </li>
           <li className="gap-[28px] flex">
-            <span className=" cursor-pointerflex relative z-[1]">
+            <span className=" cursor-pointer flex relative z-[1]">
               <svg
                 onClick={search}
                 className={`${
