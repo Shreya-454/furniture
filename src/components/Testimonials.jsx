@@ -9,6 +9,13 @@ import custmer4 from "../assets/images/testimonial4.webp";
 import custmer5 from "../assets/images/testimonial5.webp";
 import custmer6 from "../assets/images/testimonial6.webp";
 import custmer7 from "../assets/images/testimonial7.webp";
+import test1 from "../assets/images/test1.webp";
+import test2 from "../assets/images/test2.webp";
+import test3 from "../assets/images/test3.webp";
+import test4 from "../assets/images/test4.webp";
+import test5 from "../assets/images/test5.webp";
+import test6 from "../assets/images/test6.webp";
+import test7 from "../assets/images/test7.webp";
 const Testimonial = () => {
   var settings = {
     centerMode: true,
@@ -38,7 +45,7 @@ const Testimonial = () => {
   const [nav2, setNav2] = useState();
   return (
     <div>
-      <div className="max-w-[1341px] px-3 mx-auto pt-[55px] md:pb-[109px] mb-[55px]">
+      <div className="max-w-[1341px] px-3 mx-auto pt-0  sm:pt-[55px] md:pb-[109px] mb-[55px]">
         <span className="flex items-center gap-2 justify-center lg:justify-normal">
           <hr className="max-w-[96px] w-full h-[1px] bg-[#000000] border-t-[unset]" />
           <p className="text-[#BD7D41] font-poppins text-lg sm:text-xl text-center font-normal leading-normal">
@@ -67,61 +74,102 @@ const Testimonial = () => {
               <img
                 src={custmer1}
                 alt="custumer"
-                className="flex w-full justify-center items-center max-w-[264px] "
+                className=" w-full justify-center items-center max-w-[264px] !hidden sm:!flex"
+              />
+              <img
+                src={test1}
+                alt="img1"
+                className="!flex sm:!hidden justify-center items-center max-w-[264px]"
               />
             </div>
             <div className=" !flex justify-center  items-center text-center mx-auto">
               <img
                 src={custmer2}
                 alt="custumer"
-                className="flex w-full justify-center items-center max-w-[164px] "
+                className="w-full justify-center items-center max-w-[164px] !hidden sm:!flex"
+              />
+              <img
+                src={test2}
+                alt="img1"
+                className="!flex sm:!hidden justify-center items-center max-w-[164px]"
               />
             </div>
             <div className=" !flex justify-center  items-center text-center mx-auto">
               <img
                 src={custmer3}
                 alt="custumer"
-                className="flex w-full justify-center items-center max-w-[148px] "
+                className="!hidden sm:!flex justify-center items-center max-w-[148px] "
+              />
+              <img
+                src={test3}
+                alt="img"
+                className="!flex sm:!hidden justify-center items-center max-w-[148px]"
               />
             </div>
             <div className=" !flex justify-center  items-center text-center mx-auto">
               <img
                 src={custmer4}
                 alt="custumer"
-                className="flex w-full justify-center items-center max-w-[260px] "
+                className="!hidden sm:!flex w-full justify-center items-center max-w-[260px] "
+              />
+              <img
+                src={test4}
+                alt="img"
+                className="!flex sm:!hidden justify-center items-center max-w-[260px]"
               />
             </div>
             <div className=" !flex justify-center  items-center text-center mx-auto">
               <img
                 src={custmer5}
                 alt="custumer"
-                className="flex w-full justify-center items-center max-w-[258px] "
+                className="!hidden sm:!flex justify-center items-center"
+              />
+              <img
+                src={test5}
+                alt="img"
+                className="!flex sm:!hidden justify-center items-center
+              "
               />
             </div>
             <div className=" !flex justify-center  items-center text-center mx-auto">
               <img
                 src={custmer6}
                 alt="custumer"
-                className="flex w-full justify-center items-center max-w-[193px] "
+                className="sm:!flex !hidden w-full justify-center items-center max-w-[193px] "
+              />
+              <img
+                src={test6}
+                alt="img"
+                className="!flex sm:!hidden justify-center items-center max-w-[193px]"
               />
             </div>
             <div className=" !flex justify-center  items-center text-center mx-auto">
               <img
                 src={custmer7}
                 alt="custumer"
-                className="flex w-full justify-center items-center max-w-[181px] "
+                className="sm:!flex !hidden w-full justify-center items-center max-w-[181px] "
+              />
+              <img
+                src={test7}
+                alt="img"
+                className="!flex sm:!hidden justify-center items-center max-w-[181px]"
               />
             </div>
             <div className=" !flex justify-center  items-center text-center mx-auto">
               <img
                 src={custmer5}
                 alt="custumer"
-                className="flex w-full justify-center items-center max-w-[258px] "
+                className="!hidden sm:!flex justify-center items-center"
+              />
+              <img
+                src={test5}
+                alt="img"
+                className="!flex sm:!hidden justify-center items-center
+              "
               />
             </div>
           </Slider>
           <Slider
-            {...settings}
             centerMode={true}
             asNavFor={nav1}
             ref={(slider2) => setNav2(slider2)}
@@ -133,7 +181,7 @@ const Testimonial = () => {
             <div>
               <div>
                 <h3 className=" text-center text-black font-semibold text-lg leading-normal font-poppins">
-                  Treepi Shoty
+                  Roshni
                 </h3>
                 <p className=" text-center text-[#4D4D4D] font-poppins text-sm font-light leading-noraml">
                   Teacher
@@ -149,7 +197,7 @@ const Testimonial = () => {
             <div>
               <div>
                 <h3 className=" text-center text-black font-semibold text-lg leading-normal font-poppins">
-                  Treepi Shoty
+                  Gopal
                 </h3>
                 <p className=" text-center text-[#4D4D4D] font-poppins text-sm font-light leading-noraml">
                   Developer
@@ -165,7 +213,7 @@ const Testimonial = () => {
             <div>
               <div>
                 <h3 className=" text-center text-black font-semibold text-lg leading-normal font-poppins">
-                  Treepi Shoty
+                  Pooja
                 </h3>
                 <p className=" text-center text-[#4D4D4D] font-poppins text-sm font-light leading-noraml">
                   Professor
@@ -197,7 +245,7 @@ const Testimonial = () => {
             <div>
               <div>
                 <h3 className=" text-center text-black font-semibold text-lg leading-normal font-poppins">
-                  Treepi Shoty
+                  Mohini
                 </h3>
                 <p className=" text-center text-[#4D4D4D] font-poppins text-sm font-light leading-noraml">
                   Developer
@@ -213,7 +261,7 @@ const Testimonial = () => {
             <div>
               <div>
                 <h3 className=" text-center text-black font-semibold text-lg leading-normal font-poppins">
-                  Treepi Shoty
+                  Pankaj
                 </h3>
                 <p className=" text-center text-[#4D4D4D] font-poppins text-sm font-light leading-noraml">
                   Professor
@@ -229,7 +277,7 @@ const Testimonial = () => {
             <div>
               <div>
                 <h3 className=" text-center text-black font-semibold text-lg leading-normal font-poppins">
-                  Treepi Shoty
+                  Priyanka
                 </h3>
                 <p className=" text-center text-[#4D4D4D] font-poppins text-sm font-light leading-noraml">
                   Developer
@@ -245,7 +293,7 @@ const Testimonial = () => {
             <div>
               <div>
                 <h3 className=" text-center text-black font-semibold text-lg leading-normal font-poppins">
-                  Treepi Shoty
+                  Sameer
                 </h3>
                 <p className=" text-center text-[#4D4D4D] font-poppins text-sm font-light leading-noraml">
                   Developer

@@ -2,6 +2,10 @@ import React, { useState } from "react";
 import logo from "../assets/images/logo.webp";
 import { Link } from "react-router-dom";
 const Nav = () => {
+  const [input, setinput] = useState(false);
+  function search() {
+    setinput(!input);
+  }
   const [show, setshow] = useState(true);
   function nav() {
     setshow(!show);
@@ -25,21 +29,37 @@ const Nav = () => {
             show ? "right-[-100%]" : "right-0"
           }`}
         >
-          <li className="text-white relative after:absolute after:w-0 after:h-[3px] after:hover:left-0  after:bg-[#BD7D41] transition-all after:left-[50%] after:duration-700 hover:after:w-full after:bottom-[-12px] font-roboto md:text-lg text-base font-bold">
+          <li
+            onClick={nav}
+            className="text-white relative after:absolute after:w-0 after:h-[3px] after:hover:left-0  after:bg-[#BD7D41] transition-all after:left-[50%] after:duration-700 hover:after:w-full after:bottom-[-12px] font-roboto md:text-lg text-base webkit-stroke  font-normal"
+          >
             <Link to={"/"}>HOME </Link>
           </li>
-          <li className="text-white relative after:absolute after:w-0 after:h-[3px] after:hover:left-0  after:bg-[#BD7D41] transition-all after:left-[50%] after:duration-700 hover:after:w-full after:bottom-[-12px] font-roboto md:text-lg text-base font-bold">
+          <li
+            onClick={nav}
+            className="text-white relative after:absolute after:w-0 after:h-[3px] after:hover:left-0  after:bg-[#BD7D41] transition-all after:left-[50%] after:duration-700 hover:after:w-full after:bottom-[-12px] font-roboto md:text-lg text-base webkit-stroke  font-normal"
+          >
             <Link to={"/about"}> ABOUT US</Link>
           </li>
-          <li className="text-white  relative after:absolute after:w-0 after:h-[3px] after:hover:left-0  after:bg-[#BD7D41] transition-all after:left-[50%] after:duration-700 hover:after:w-full after:bottom-[-12px] font-roboto md:text-lg text-base font-bold">
+          <li
+            onClick={nav}
+            className="text-white  relative after:absolute after:w-0 after:h-[3px] after:hover:left-0  after:bg-[#BD7D41] transition-all after:left-[50%] after:duration-700 hover:after:w-full after:bottom-[-12px] font-roboto md:text-lg text-base webkit-stroke  font-normal"
+          >
             <Link to={"/shop"}> SHOP </Link>
           </li>
-          <li className="text-white  relative after:absolute after:w-0 after:h-[3px] after:hover:left-0  after:bg-[#BD7D41] transition-all after:left-[50%] after:duration-700 hover:after:w-full after:bottom-[-12px] font-roboto md:text-lg text-base font-bold">
+          <li
+            onClick={nav}
+            className="text-white  relative after:absolute after:w-0 after:h-[3px] after:hover:left-0  after:bg-[#BD7D41] transition-all after:left-[50%] after:duration-700 hover:after:w-full after:bottom-[-12px] font-roboto md:text-lg text-base webkit-stroke font-normal"
+          >
             <Link to={"/contact"}> CONTACT US </Link>
           </li>
           <li className="gap-[28px] flex">
-            <span>
+            <span className=" cursor-pointerflex relative z-[1]">
               <svg
+                onClick={search}
+                className={`${
+                  input && "sm:absolute sm:right-[12px] sm:top-[11px] z-[2] "
+                }`}
                 xmlns="http://www.w3.org/2000/svg"
                 width="19"
                 height="19"
@@ -51,8 +71,17 @@ const Nav = () => {
                   fill="white"
                 />
               </svg>
+              <input
+                type="search"
+                placeholder="search"
+                className={`bg-transparent outline-0 border-[2px] border-white ${
+                  input
+                    ? "w-full visible py-2 duration-500 pl-3 text-white h-full"
+                    : "w-0 invisible absolute h-0"
+                }`}
+              />
             </span>
-            <span>
+            <span className="cursor-pointer">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="26"

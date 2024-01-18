@@ -8,28 +8,23 @@ import sec3img3 from "../assets/images/sec3img3.webp";
 const images = [
   {
     img: sec3img1,
-    id: "a",
   },
   {
     img: sec3img2,
-    id: "b",
   },
   {
     img: sec3img3,
-    id: "c",
   },
   {
     img: sec3img1,
-    id: "d",
   },
   {
     img: sec3img2,
-    id: "e",
   },
 ];
 const Sec3 = () => {
-  const card = images.map((images) => (
-    <div className="mx-3" key={images.id}>
+  const card = images.map((images,index) => (
+    <div className="mx-3" key={index}>
       <div className="max-w-[295px] max-h-[338px] h-full pb-[27px]  bg-white pl-[17px] pt-[15px] pr-[12px] shadow-[2px_7px_28px_0px_#0000000D] mx-3">
         <img src={images.img} alt="img1" className="mb-[13px]" />
         <div className="flex justify-between items-center">
@@ -148,10 +143,19 @@ const Sec3 = () => {
         },
       },
       {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2.08,
+          slidesToScroll: 1,
+          dots:true
+        }
+      },
+      {
         breakpoint: 950,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
+            dots:true
         },
       },
       {
@@ -159,6 +163,7 @@ const Sec3 = () => {
         settings: {
           slidesToShow: 3,
           slidesToScroll: 1,
+            dots:true
         },
       },
       {
@@ -166,6 +171,7 @@ const Sec3 = () => {
         settings: {
           slidesToShow: 2.3,
           slidesToScroll: 1,
+            dots:true
         },
       },
       {
@@ -173,6 +179,7 @@ const Sec3 = () => {
         settings: {
           slidesToShow: 1.7,
           slidesToScroll: 1,
+            dots:true
         },
       },
       {
@@ -182,13 +189,14 @@ const Sec3 = () => {
           slidesToScroll: 1,
           autoPlay: true,
           autoPlaySpeed: 1000,
+           dots:true,
         },
       },
     ],
   };
   return (
     <div className="bg-[#2D39490A] md:pt-[70px] pt-5 lg:pb-[98px] pb-0 relative overflow-x-clip">
-      <div className="max-w-[741px] max-h-[417px] h-full bg-grey-gradient w-full absolute right-0 top-[51%] xl:top-[-30%] "></div>
+      <div className="max-w-[741px] max-h-[417px] h-full bg-grey-gradient w-full absolute right-0 top-[40%] min-[430px]:top-[35%] md:top-[43%] max-[ 889px]:top-[31%] xl:top-[-30%] "></div>
       <div className="max-w-[1320px] mx-auto px-3">
         <div className="flex flex-wrap flex-row -mx-3">
           <div
@@ -209,7 +217,7 @@ const Sec3 = () => {
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
                 faucibus, urna at pulvinar porta
               </p>
-              <div className="flex gap-[14px] mt-10 justify-center xl:justify-normal">
+              <div className=" gap-[14px] mt-10 right-[10%] top-[95%] min-[891px]:flex hidden max-xl:absolute lg:right-[10%] lg:top-[279%]">
                 <button
                   className="w-[41px] h-[41px] rounded-[10px] bg-white  flex justify-center items-center"
                   onClick={() => btn?.current?.slickPrev()}
@@ -257,7 +265,7 @@ const Sec3 = () => {
             data-aos-easing="linear"
             data-aos-duration="1500"
           >
-            <Slider ref={btn} {...settings}>
+            <Slider ref={btn} {...settings} className="max-h-[400px] h-full s1" >
               {card}
             </Slider>
           </div>

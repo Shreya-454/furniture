@@ -9,32 +9,26 @@ import Button from "./Button";
 const cardimg = [
   {
     img: sofa1,
-    id: 7,
   },
   {
     img: sofa2,
-    id: 8,
   },
   {
     img: sofa3,
-    id: 9,
   },
   {
     img: sofa4,
-    id: 10,
   },
   {
     img: sofa5,
-    id: 11,
   },
   {
     img: sofa6,
-    id: 12,
   },
 ];
 const Product = () => {
-  const cards = cardimg.map((cardimg) => (
-    <div className="xl:w-1/3 md:w-1/2 w-full flex justify-center px-3 mb-[42px]" key={cardimg.id}>
+  const cards = cardimg.map((cardimg,index) => (
+    <div className="xl:w-1/3 md:w-1/2 w-full flex justify-center px-3 mb-[42px]" key={index}>
       <div
         className="max-w-[422px] bg-white px-[23px] pt-[18px] pb-[53px] hover:shadow-[6px_13px_38px_0px_#0000001F] duration-300"
         data-aos="zoom-in-up"

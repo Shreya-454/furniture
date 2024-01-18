@@ -1,5 +1,5 @@
 import React from "react";
-import greysofa from "../assets/images/grey-sofa.png";
+import greysofa from "../assets/images/grey-sofa.webp";
 import Button from "./Button";
 const Wooden = () => {
   return (
@@ -26,7 +26,7 @@ const Wooden = () => {
               </span>
             </h2>
             <div className="flex justify-center lg:justify-normal">
-              <Button text="SHOP NOW" />
+              <Button text="SHOP NOW" name="!mt-2 sm:!mt-[10]"/>
             </div>
           </div>
           <div

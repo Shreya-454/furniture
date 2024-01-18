@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import backtopicon from "../assets/images/back-to-top.png";
+import backtopicon from "../assets/images/back-to-top.webp";
 const BackToTop = () => {
     const [visible, setVisible] = useState(false);
 
@@ -28,7 +28,7 @@ const BackToTop = () => {
                     display: visible ? "flex " : "none",
                 }}
             >
-                <img className="w-full" src={backtopicon} alt="backtoptop" />
+                <div className="w-[30px] h-[30px] bg-white rounded-full flex justify-center items-center"><img className="w-full" src={backtopicon} alt="backtoptop" /></div>
             </button>
         </div>
     );
