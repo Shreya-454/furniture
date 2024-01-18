@@ -156,7 +156,7 @@ const Latest = () => {
           <svg
             width="32"
             height="10"
-            className="md:w-[42px] md:h-[10px] "
+            className="md:w-[42px] md:h-[16px] "
             viewBox="0 0 42 16"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"

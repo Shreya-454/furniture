@@ -98,7 +98,7 @@ const Testimonial = () => {
               <img
                 src={custmer3}
                 alt="custumer"
-                className="!hidden sm:!flex justify-center items-center max-w-[148px] "
+                className="!hidden sm:!flex justify-center w-full items-center max-w-[148px] "
               />
               <img
                 src={test3}
@@ -122,7 +122,7 @@ const Testimonial = () => {
               <img
                 src={custmer5}
                 alt="custumer"
-                className="!hidden sm:!flex justify-center items-center"
+                className="!hidden sm:!flex justify-center w-full items-center"
               />
               <img
                 src={test5}
@@ -159,7 +159,7 @@ const Testimonial = () => {
               <img
                 src={custmer5}
                 alt="custumer"
-                className="!hidden sm:!flex justify-center items-center"
+                className="!hidden sm:!flex w-full justify-center items-center"
               />
               <img
                 src={test5}
