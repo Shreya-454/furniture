@@ -121,7 +121,7 @@ const Product = () => {
     </div>
   ));
   return (
-    <div className="lg:pt-[135px] pt-20 lg:pb-[165px] pb-20">
+    <div className="lg:pt-[135px] pt-20 lg:pb-[165px] pb-10 sm:pb-20">
       <div className="max-w-[1320px] mx-auto px-3">
         <div className=" sm:flex justify-between items-center lg:mb-[97px] md:mt-20 mb-10">
           <div data-aos="fade-up-right">

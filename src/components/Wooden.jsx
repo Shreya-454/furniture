@@ -3,7 +3,7 @@ import greysofa from "../assets/images/grey-sofa.webp";
 import Button from "./Button";
 const Wooden = () => {
   return (
-    <div className="bg-[#2D39490A] py-16 relative z-[1]">
+    <div className="bg-[#2D39490A] sm:py-16 py-12 relative z-[1]">
       <div className="max-w-[741px] w-full h-full bg-[#243040] absolute max-h-[270px] z-[-1] lg:bottom-[-15%] bottom-0 right-0"></div>
       <div className="max-w-[1320px] mx-auto px-3">
         <div className="flex flex-row flex-wrap -mx-3">
