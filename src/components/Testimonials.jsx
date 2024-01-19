@@ -59,7 +59,7 @@ const Testimonial = () => {
           className="pt-[50px]"
           data-aos="fade-up-right"
           data-aos-easing="linear"
-          data-aos-duration="1500"
+          data-aos-duration="1000"
         >
           <Slider
             {...settings}

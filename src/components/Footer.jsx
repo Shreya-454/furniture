@@ -11,7 +11,7 @@ const Footer = () => {
             className="md:w-1/2  px-3 w-full mb-10 md:mb-0"
             data-aos="fade-right"
             data-aos-easing="linear"
-            data-aos-duration="1500"
+            data-aos-duration="1000"
           >
             <div className="flex gap-[7px] items-center mb-[30px]">
               <img src={logo} alt="" />
@@ -85,7 +85,7 @@ const Footer = () => {
                 className="sm:w-1/3 mb-5 sm:mb-5 w-1/2  px-3"
                 data-aos="fade-down"
                 data-aos-easing="linear"
-                data-aos-duration="1500"
+                data-aos-duration="1000"
               >
                 <ul>
                   <li className="text-white font-roboto md:text-sm text-xs font-medium border-b  border-[#BD7D41] border-solid w-[130px] mb-[19px]">
@@ -137,7 +137,7 @@ const Footer = () => {
                 className="sm:w-1/3 mb-5 sm:mb-5 w-1/2 px-3"
                 data-aos="fade-down"
                 data-aos-easing="linear"
-                data-aos-duration="1500"
+                data-aos-duration="1000"
               >
                 <ul>
                   <li className="text-white font-roboto md:text-sm text-xs font-medium border-b  border-[#BD7D41] border-solid w-[130px] mb-[19px]">
@@ -189,7 +189,7 @@ const Footer = () => {
                 className="sm:w-1/3 w-full px-3"
                 data-aos="fade-down"
                 data-aos-easing="linear"
-                data-aos-duration="1500"
+                data-aos-duration="1000"
               >
                 <ul>
                   <li className="text-white font-roboto md:text-sm text-xs font-medium border-b  border-[#BD7D41] border-solid w-[130px] mb-[19px]">

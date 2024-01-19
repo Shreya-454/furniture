@@ -265,7 +265,7 @@ const Sec3 = () => {
             className="xl:w-7/12 w-full px-3 xl:absolute right-0"
             data-aos="fade-left"
             data-aos-easing="linear"
-            data-aos-duration="1500"
+            data-aos-duration="1000"
           >
             <Slider ref={btn} {...settings} className="max-h-[400px] h-full s1">
               {card}

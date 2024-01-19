@@ -34,7 +34,7 @@ const Sec2 = () => {
             </div>
           </div>
           <div className="lg:w-1/2 w-full px-3  " data-aos="fade-up" data-aos-easing="linear"
-     data-aos-duration="1500">
+     data-aos-duration="1000">
             <div className="flex items-center gap-[11px] mb-[19px] justify-center lg:justify-normal">
               <div className="w-[13%] border border-solid border-black"></div>
               <h3 className=" font-poppins md:text-xl text-lg text-center leading-normal font-normal text-[#BD7D41]">

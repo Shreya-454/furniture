@@ -11,7 +11,7 @@ const Wooden = () => {
             className="lg:w-5/12 w-full px-3 mb-10 lg:mb-0"
             data-aos="fade-right"
             data-aos-easing="linear"
-            data-aos-duration="1500"
+            data-aos-duration="1000"
           >
             <div className="flex items-center gap-[9px] justify-center lg:justify-normal">
               <div className="w-[16%] border border-black border-solid "></div>

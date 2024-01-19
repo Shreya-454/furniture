@@ -15,7 +15,7 @@ const Header = () => {
         className="text-white font-poppins md:text-xl text-lg leading-normal text-center font-normal "
         data-aos="zoom-in"
         data-aos-easing="linear"
-        data-aos-duration="1500"
+        data-aos-duration="1000"
       >
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus{" "}
       </p>
@@ -24,7 +24,7 @@ const Header = () => {
           text="SHOP NOW"
           data-aos="zoom-in"
           data-aos-easing="linear"
-          data-aos-duration="1500"
+          data-aos-duration="1000"
         />
       </div>
     </div>
