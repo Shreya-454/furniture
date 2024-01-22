@@ -37,6 +37,14 @@ const Product = () => {
   function close() {
     setside(false);
   }
+  function Remove(index){
+    const priyanka = [...sidebar]
+    priyanka .splice(index,1)
+    setsidebar(priyanka)
+    if(priyanka.length === 0){
+      setside(false)
+    }
+  }
   const cards = cardimg.map((cardimg,i) => (
     <div className="xl:w-1/3 md:w-1/2 w-full flex justify-center px-3 mb-[42px]" key={i}>
       <div
@@ -172,10 +180,19 @@ const Product = () => {
         <p className="text-[#000000B2] font-poppins mg:text-lg text-base font-normal md:pt-4 sm:pt-3 pt-1">
           Lorem ipsum dolor{" "}
         </p>
-        <p className="text-black font-poppins xl:text-[28px] md:text-xl text-lg font-semibold">
-          ₹ 1200.00
-        </p>
+        <div className="flex justify-between items-center">
+          <div className="flex gap-[2.87px]">
+            <p className="md:text-[28.67px] text-2xl text-center font-poppins font-semibold leading-normal">
+              ₹
+            </p>
+            <p className="md:text-[28.67px] text-2xl text-center font-poppins font-semibold leading-normal">
+              1200.00
+            </p>
+          </div>
+          <Button fun={()=>Remove(index)} text="Remove" name="!py-2.5 !px-3 !mt-0"  />
+        </div>
       </div>
+      
     </div>
   ));
   return (
