@@ -10,20 +10,22 @@ const Nav = () => {
   function nav() {
     setshow(!show);
     if (show === true) {
-      document.body.classList.add("overflow-hidden");
+      document.body.classList.add("max-lg:overflow-hidden");
     } else {
-      document.body.classList.remove("overflow-hidden");
+      document.body.classList.remove("max-lg:overflow-hidden");
     }
   }
   return (
     <div className="max-w-[1320px] mx-auto px-3">
       <div className="flex py-[15px] justify-between items-center">
+        <Link to={"/"}>
         <div className="flex items-center cursor-pointer">
           <img src={logo} alt="" />
           <span className="pl-2 text-white font-roboto sm:text-[33px] text-2xl font-bold">
             FURNITURE
           </span>
         </div>
+        </Link>
         <ul
           className={`gap-[55px] flex mobileView items-center duration-700 ${
             show ? "right-[-100%]" : "right-0"
